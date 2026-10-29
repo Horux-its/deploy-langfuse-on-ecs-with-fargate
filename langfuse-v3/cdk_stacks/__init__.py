@@ -1,5 +1,4 @@
 from .alb_langfuse_web import ALBLangfuseWebStack
-from .aurora_postgresql import AuroraPostgresqlStack
 from .ecr import ECRStack
 from .ecs_cluster import ECSClusterStack
 from .ecs_fargate_service_clickhouse import ECSFargateServiceClickhouseStack
@@ -10,6 +9,7 @@ from .ecs_task_langfuse_web import ECSTaskLangfuseWebStack
 from .ecs_task_langfuse_worker import ECSTaskLangfuseWorkerStack
 from .efs_clickhouse import EFSStack
 from .redis import RedisClusterStack
+from .rds_postgresql import RdsPostgresqlStack
 from .s3 import S3BucketStack
 from .service_discovery import ServiceDiscoveryStack
 from .vpc import VpcStack

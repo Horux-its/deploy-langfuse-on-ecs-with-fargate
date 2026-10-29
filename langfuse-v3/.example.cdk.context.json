@@ -1,6 +1,6 @@
 {
   "private_dns_namespace_name": "langfuse.local",
-  "db_cluster_name": "langfuse-db",
+  "db_instance_identifier": "langfuse-db",
   "ecr": [
     {
       "repository_name": "langfuse-web",

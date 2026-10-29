@@ -62,7 +62,7 @@ For example,
 ```
 {
   "private_dns_namespace_name": "langfuse.local",
-  "db_cluster_name": "langfuse-db",
+  "db_instance_identifier": "langfuse-db",
   "ecr": [
     {
       "repository_name": "langfuse-web",
@@ -144,7 +144,7 @@ LangfuseECRStack
 LangfuseVpcStack
 LangfuseWebALBStack
 LangfuseCacheStack
-LangfuseAuroraPostgreSQLStack
+LangfusePostgreSQLStack
 LangfuseS3BucketStack
 LangfuseServiceDiscoveryStack
 LangfuseECSClusterStack
@@ -233,9 +233,9 @@ You will also see the details of the selected trace as follows:
  * [Amazon ElastiCache Supported engines and versions](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/supported-engine-versions.html)
  * [Comparing Valkey, Memcached, and Redis OSS self-designed caches](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SelectEngine.html)
 
-#### Amazon Aurora PostgreSQL
+#### Amazon RDS for PostgreSQL
 
- * [Working with Amazon Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraPostgreSQL.html)
+ * [Working with PostgreSQL on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html)
 
 #### Clickhouse
 

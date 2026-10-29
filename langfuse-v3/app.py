@@ -8,7 +8,6 @@ import aws_cdk as cdk
 
 from cdk_stacks import (
   ALBLangfuseWebStack,
-  AuroraPostgresqlStack,
   ECRStack,
   ECSClusterStack,
   ECSTaskClickhouseStack,
@@ -19,6 +18,7 @@ from cdk_stacks import (
   ECSFargateServiceLangfuseWebStack,
   ECSFargateServiceLangfuseWorkerStack,
   RedisClusterStack,
+  RdsPostgresqlStack,
   S3BucketStack,
   ServiceDiscoveryStack,
   VpcStack
@@ -52,7 +52,7 @@ redis_stack = RedisClusterStack(app, "LangfuseCacheStack",
 )
 redis_stack.add_dependency(langfuse_web_alb_stack)
 
-rds_stack = AuroraPostgresqlStack(app, "LangfuseAuroraPostgreSQLStack",
+rds_stack = RdsPostgresqlStack(app, "LangfusePostgreSQLStack",
   vpc_stack.vpc,
   env=AWS_ENV
 )
