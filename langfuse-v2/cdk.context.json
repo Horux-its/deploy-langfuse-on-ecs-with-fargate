@@ -1,5 +1,5 @@
 {
-  "db_cluster_name": "langfuse-db",
+  "db_instance_identifier": "langfuse-db",
   "ecs_cluster_name": "langfuse-cluster",
   "ecs_service_name": "langfuse-alb-service",
   "image_version": "2",

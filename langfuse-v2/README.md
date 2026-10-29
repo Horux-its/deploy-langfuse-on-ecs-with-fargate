@@ -61,7 +61,7 @@ For example,
 
 ```
 {
-  "db_cluster_name": "langfuse-db",
+  "db_instance_identifier": "langfuse-db",
   "ecs_cluster_name": "langfuse-cluster",
   "ecs_service_name": "langfuse-alb-service",
   "image_version": "2",
@@ -104,7 +104,7 @@ We can list all the CDK stacks by using the `cdk list` command prior to deployme
 LangFuseECRStack
 LangFuseVpcStack
 LangFuseALBStack
-LangFuseAuroraPostgreSQLStack
+LangFusePostgreSQLStack
 LangFuseECSClusterStack
 LangFuseECSTaskStack
 LangFuseECSAlbFargateServiceStack

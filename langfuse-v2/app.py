@@ -8,11 +8,11 @@ import aws_cdk as cdk
 
 from cdk_stacks import (
   ApplicationLoadBalancerStack,
-  AuroraPostgresqlStack,
   ECRStack,
   ECSAlbFargateServiceStack,
   ECSClusterStack,
   ECSTaskStack,
+  RdsPostgresqlStack,
   VpcStack
 )
 
@@ -38,7 +38,7 @@ alb_stack = ApplicationLoadBalancerStack(app, "LangFuseALBStack",
 )
 alb_stack.add_dependency(vpc_stack)
 
-rds_stack = AuroraPostgresqlStack(app, "LangFuseAuroraPostgreSQLStack",
+rds_stack = RdsPostgresqlStack(app, "LangFusePostgreSQLStack",
   vpc_stack.vpc,
   env=AWS_ENV
 )
